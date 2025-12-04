@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MPV Remote Enqueuer Settings</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input { padding: 8px; margin-top: 5px; width: 250px; }
+        button { padding: 10px 15px; margin-top: 20px; cursor: pointer; }
+        #status { margin-top: 15px; color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h2>MPV Remote Server Configuration</h2>
+    <label for="mpv_ip">Server IP/Hostname:</label>
+    <input type="text" id="mpv_ip" value="127.0.0.1">
+
+    <label for="mpv_port">Server Port:</label>
+    <input type="number" id="mpv_port" value="8000">
+
+    <button id="save_button">Save Settings</button>
+    <div id="status"></div>
+
+    <script src="options.js"></script>
+</body>
+</html>

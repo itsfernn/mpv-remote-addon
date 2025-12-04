@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "MPV Remote Enqueuer",
+  "version": "1.0",
+  "description": "Enqueues links to a customizable remote MPV server.",
+  
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+  
+  "action": {
+    "default_title": "Enqueue Current Link"
+  },
+  
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus"
+  ],
+  
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
