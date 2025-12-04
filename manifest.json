@@ -3,6 +3,15 @@
   "name": "MPV Remote Enqueuer",
   "version": "1.0",
   "description": "Enqueues links to a customizable remote MPV server.",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "mpv-remote-enqueuer@itsfernn",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
   
   "icons": {
     "128": "icon128.png",
@@ -19,7 +28,7 @@
     "storage",
     "contextMenus"
   ],
-  
+
   "host_permissions": [
     "http://*/*",
     "https://*/*"
@@ -28,7 +37,6 @@
   "background": {
     "scripts": ["background.js"]
   },
-  
   "options_ui": {
     "page": "options.html",
     "open_in_tab": false
