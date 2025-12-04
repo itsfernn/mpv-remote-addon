@@ -1,6 +1,6 @@
 // Use 'browser' for standard Firefox WebExtension APIs
 const BROWSER_API = typeof browser !== 'undefined' ? browser : chrome;
-const DEFAULT_IP = '127.0.0.1';
+const DEFAULT_IP = 'localhost';
 const DEFAULT_PORT = '8000';
 const API_PATH = '/api/v1/playlist';
 
